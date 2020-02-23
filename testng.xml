@@ -1,15 +1,15 @@
 <suite name="Test Suite" verbose="1">
 	<listeners>
-		<listener class-name="com.vsysq.base.TestListener" />
+		<listener class-name="com.qa.base.TestListener" />
 	</listeners>
 	<parameter name="browserType" value="firefox" />
 	<parameter name="appURL" value="https://google.com" />
 
 	<test name="Admin Tests">
 		<classes>
-			<class name="com.tests.BasePageTest" />
-			<class name="com.tests.SignInPageTest" />
-			<class name="com.tests.CreateAccountTest" />
+			<class name="com.qa.tests.BasePageTest" />
+			<class name="com.qa.tests.SignInPageTest" />
+			<class name="com.qa.tests.CreateAccountTest" />
 		</classes>
 	</test>
 </suite>

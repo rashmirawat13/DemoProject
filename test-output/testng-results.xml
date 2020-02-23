@@ -1,199 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="108" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
+  <suite name="Test Suite" duration-ms="36619" started-at="2020-02-23T12:27:05Z" finished-at="2020-02-23T12:27:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="108" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
+    <test name="Admin Tests" duration-ms="36619" started-at="2020-02-23T12:27:05Z" finished-at="2020-02-23T12:27:42Z">
       <class name="com.qa.tests.BasePageTest">
-        <test-method status="FAIL" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="initializeTestBaseSetup" is-config="true" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="initializeTestBaseSetup" is-config="true" duration-ms="10210" started-at="2020-02-23T12:27:05Z" finished-at="2020-02-23T12:27:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://google.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="setUp" is-config="true" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="setUp" is-config="true" duration-ms="0" started-at="2020-02-23T12:27:15Z" finished-at="2020-02-23T12:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="baseTest1()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="baseTest1" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="baseTest1()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="baseTest1" duration-ms="318" started-at="2020-02-23T12:27:15Z" finished-at="2020-02-23T12:27:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest1 -->
-        <test-method status="SKIP" signature="baseTest2()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="baseTest2" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="baseTest2()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="baseTest2" duration-ms="3005" started-at="2020-02-23T12:27:16Z" finished-at="2020-02-23T12:27:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest2 -->
-        <test-method status="SKIP" signature="baseTest3()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="baseTest3" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="baseTest3()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="baseTest3" duration-ms="4" started-at="2020-02-23T12:27:19Z" finished-at="2020-02-23T12:27:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest3 -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
+        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="verifyHomePage" duration-ms="16" started-at="2020-02-23T12:27:19Z" finished-at="2020-02-23T12:27:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.BasePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1998" started-at="2020-02-23T12:27:19Z" finished-at="2020-02-23T12:27:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="verifyHomePage()[pri:0, instance:com.qa.tests.BasePageTest@4883b407]" name="verifyHomePage" duration-ms="0" started-at="2020-02-23T12:09:10Z" finished-at="2020-02-23T12:09:10Z">
-          <exception class="org.testng.TestNGException">
+      </class> <!-- com.qa.tests.BasePageTest -->
+      <class name="com.qa.tests.CreateAccountTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="initializeTestBaseSetup" is-config="true" duration-ms="6915" started-at="2020-02-23T12:27:31Z" finished-at="2020-02-23T12:27:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="setUp" is-config="true" duration-ms="0" started-at="2020-02-23T12:27:38Z" finished-at="2020-02-23T12:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createAccountExample1()[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="createAccountExample1" duration-ms="5" started-at="2020-02-23T12:27:38Z" finished-at="2020-02-23T12:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountExample1 -->
+        <test-method status="PASS" signature="createAccountExample2()[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="createAccountExample2" duration-ms="0" started-at="2020-02-23T12:27:38Z" finished-at="2020-02-23T12:27:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountExample2 -->
+        <test-method status="FAIL" signature="verifyCreateAnAccountPage()[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="verifyCreateAnAccountPage" duration-ms="1780" started-at="2020-02-23T12:27:38Z" finished-at="2020-02-23T12:27:40Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml]]>
+              <![CDATA[Unable to locate element: #link\-signup
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'MANISHRASHMIPC', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 11776, moz:profile: C:\Users\RASHMI\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99c00daf-8766-4dcc-956d-1215792f6f53
+*** Element info: {Using=id, value=link-signup}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by BeforeClass on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\RASHMI\AppData\Local\Temp\testng-eclipse-946688530\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #link\-signup
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'MANISHRASHMIPC', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 11776, moz:profile: C:\Users\RASHMI\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99c00daf-8766-4dcc-956d-1215792f6f53
+*** Element info: {Using=id, value=link-signup}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.qa.pages.SignInPage.clickonCreateAnAccount(SignInPage.java:40)
+at com.qa.tests.CreateAccountTest.verifyCreateAnAccountPage(CreateAccountTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -211,11 +141,121 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-      </class> <!-- com.qa.tests.BasePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyCreateAnAccountPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.CreateAccountTest@4667ae56]" name="tearDown" is-config="true" duration-ms="2003" started-at="2020-02-23T12:27:40Z" finished-at="2020-02-23T12:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.CreateAccountTest -->
+      <class name="com.qa.tests.SignInPageTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="initializeTestBaseSetup" is-config="true" duration-ms="6208" started-at="2020-02-23T12:27:21Z" finished-at="2020-02-23T12:27:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="setUp" is-config="true" duration-ms="0" started-at="2020-02-23T12:27:27Z" finished-at="2020-02-23T12:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SignInPageTestOne()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="SignInPageTestOne" duration-ms="4" started-at="2020-02-23T12:27:27Z" finished-at="2020-02-23T12:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInPageTestOne -->
+        <test-method status="PASS" signature="SignInPageTestThree()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="SignInPageTestThree" duration-ms="0" started-at="2020-02-23T12:27:27Z" finished-at="2020-02-23T12:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInPageTestThree -->
+        <test-method status="PASS" signature="SignInPageTestTwo()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="SignInPageTestTwo" duration-ms="0" started-at="2020-02-23T12:27:27Z" finished-at="2020-02-23T12:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInPageTestTwo -->
+        <test-method status="FAIL" signature="verifySignInFunction()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="verifySignInFunction" duration-ms="1725" started-at="2020-02-23T12:27:27Z" finished-at="2020-02-23T12:27:29Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .hidden-small
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'MANISHRASHMIPC', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14816, moz:profile: C:\Users\RASHMI\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68951c47-dd1d-4f0f-b835-1ccb31c2b02a
+*** Element info: {Using=css selector, value=.hidden-small}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .hidden-small
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'MANISHRASHMIPC', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14816, moz:profile: C:\Users\RASHMI\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68951c47-dd1d-4f0f-b835-1ccb31c2b02a
+*** Element info: {Using=css selector, value=.hidden-small}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.qa.pages.SignInPage.verifySignInPageText(SignInPage.java:33)
+at com.qa.tests.SignInPageTest.verifySignInFunction(SignInPageTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInFunction -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.SignInPageTest@1a968a59]" name="tearDown" is-config="true" duration-ms="2324" started-at="2020-02-23T12:27:29Z" finished-at="2020-02-23T12:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.SignInPageTest -->
+    </test> <!-- Admin Tests -->
+  </suite> <!-- Test Suite -->
 </testng-results>

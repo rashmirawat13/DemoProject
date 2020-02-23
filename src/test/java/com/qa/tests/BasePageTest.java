@@ -13,7 +13,7 @@ import com.qa.pages.BasePage;
 public class BasePageTest extends TestBase {
 
 	private WebDriver driver;
-
+	
 	@BeforeClass
 	public void setUp() {
 		driver = getDriver();

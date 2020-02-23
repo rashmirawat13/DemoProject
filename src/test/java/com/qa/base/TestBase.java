@@ -1,4 +1,9 @@
 package com.qa.base;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,7 +17,7 @@ public class TestBase {
 	private WebDriver driver;
 	private static String driverPath = "D:\\Drivers\\";
 
-			public WebDriver getDriver() {
+	public WebDriver getDriver() {
 		return driver;
 	}
 
@@ -45,7 +50,7 @@ public class TestBase {
 		driver.navigate().to(appURL);
 		return driver;
 	}
-	
+
 	private static WebDriver initIEDriver(String appURL) {
 		System.out.println("Launching IE browser..");
 		System.setProperty("webdriver.internetexplorer.driver", "D:\\Drivers\\IEDriverServer.exe");
@@ -57,8 +62,12 @@ public class TestBase {
 
 	@Parameters({ "browserType", "appURL" })
 	@BeforeClass
-	public void initializeTestBaseSetup(String browserType, String appURL) {
+	public void initializeTestBaseSetup(String browserType, String appURL) throws IOException {
+		/*FileInputStream fin = new FileInputStream(System.getProperty("user.dir")+"//OR//confg.properties");
+		Properties prop = new Properties();
+		prop.load(fin);*/
 		try {
+			//setDriver(prop.getProperty(browserType), prop.getProperty(appURL));
 			setDriver(browserType, appURL);
 
 		} catch (Exception e) {

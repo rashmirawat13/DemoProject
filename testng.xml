@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression suite">
-  <test verbose="2" name="Demo Test">
-    <classes>
-      <!--<class name="com.java.testng.Grouping"/> -->
-      <class name="com.qa.tests.BasePageTest"/>
-      <class name="com.qa.tests.SignInPageTest"/>
-      <class name="com.qa.tests.CreateAccountTest"/>      
-    </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Default suite -->
+<suite name="Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.vsysq.base.TestListener" />
+	</listeners>
+	<parameter name="browserType" value="firefox" />
+	<parameter name="appURL" value="https://google.com" />
+
+	<test name="Admin Tests">
+		<classes>
+			<class name="com.tests.BasePageTest" />
+			<class name="com.tests.SignInPageTest" />
+			<class name="com.tests.CreateAccountTest" />
+		</classes>
+	</test>
+</suite>
